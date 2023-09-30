@@ -1,0 +1,239 @@
+/* Define Custom Properties */
+:root {
+    /* Color Variables */
+    --primary-color: #3498db;
+    --secondary-color: #e74c3c;
+    --accent-color-1: #2ecc71;
+    --accent-color-2: #f1c40f;
+
+    /* Typography Variables */
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --line-height: 1.5;
+
+    /* Color Variables for Flexbox Container */
+    --container-background: #f2f2f2;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading Font */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Typographic Scale */
+h1 {
+    font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+    font-size: 2rem; /* 32px */
+}
+
+h3 {
+    font-size: 1.5rem; /* 24px */
+}
+
+h4 {
+    font-size: 1.25rem; /* 20px */
+}
+
+h5 {
+    font-size: 1rem; /* 16px */
+}
+
+h6 {
+    font-size: 0.875rem; /* 14px */
+}
+
+p {
+    font-size: 1rem; /* 16px */
+}
+
+/* Line-Height */
+body {
+    line-height: var(--line-height);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 5px 0;
+    }
+
+    nav ul {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Tables */
+table {
+    width: 100%;
+}
+
+/* Flexbox Container */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--container-background);
+    padding: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Project Styling (customize as needed) */
+.project {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+/* Button Styles */
+.button {
+    background-color: var(--accent-color-1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--accent-color-2);
+}
+
+/* Section Styles (customize as needed) */
+.section {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+}
+
+
+/* Your existing CSS styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.social-media {
+    font-size: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 24px; /* Adjust the size of social media icons as needed */
+    height: 24px;
+}
+
+/* The animation code */
+@keyframes example {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+    }
+}
+/* Style for the admin forms */
+#admin {
+    text-align: center;
+    margin: 20px;
+}
+
+form {
+    margin: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
